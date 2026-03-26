@@ -1,0 +1,32 @@
+Step 1 - Predict
+What will each print statement display for name = Alice, age = 20, height = 64.5?
+Hello Alice! Next year you will be 21 years old.
+Alice is 64.5 inches tall.
+You will turn 100 in 80 years.
+Your name has 5 letters.
+Next year, your age multiplied by 2 is 42.
+
+What types of values are stored in name, age, height?
+name - string
+age - integar
+height - float
+
+How is input() used differently on lines 6 vs 9?
+The prompt is inside the input in line 6 and before the input.
+
+
+Identify comments and explain their purpose.
+A comments purpose is to give context on what each commit (edits you made on the files) is for.
+
+Step 3 - Investigate
+What is the difference between using + and , in print()? 
+
+What does int() do to the input for age? What happens if you remove it?
+
+What does float() do to the input for height?
+
+How does the len() function work on the name variable?
+
+How are arithmetic operators like + and * combined in (age + 1) * 2? Which happens first?
+
+Identify all variable names and explain whether they follow Python naming rules.
