@@ -20,13 +20,23 @@ A comments purpose is to give context on what each commit (edits you made on the
 
 Step 3 - Investigate
 What is the difference between using + and , in print()? 
+Using + is for adding whats after the content in the print(). The commas also act as a seperator so it's like a second option for the program to read so it wont confuse with + like how it is for " and '.
 
 What does int() do to the input for age? What happens if you remove it?
+The int turns the input data type from string to integar. If you remove the int then the program will read the data as a text and not an actual numeric value. So, we would not be able to calculate for the 100 years part.
 
 What does float() do to the input for height?
+Float is for values with decimals where it allows the coding to be precise with the answer.
 
 How does the len() function work on the name variable?
+It will treat the name as a single whole and not as how many letters are in the name.
 
 How are arithmetic operators like + and * combined in (age + 1) * 2? Which happens first?
+How they are combined is following the rules of PEMDAS. The program will first find anything inside the () then exponents and so on and in this case age + 1 is inside the () so it will run that calculation first then go back to outside of () then mult by 2 last since it was outside the ().
 
 Identify all variable names and explain whether they follow Python naming rules.
+name
+age
+height
+years to 100
+name length
