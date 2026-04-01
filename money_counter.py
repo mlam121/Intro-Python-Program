@@ -6,7 +6,8 @@ Dimes = int(input("Enter the number of dimes: "))
 Nickels = int(input("Enter the number of nickels: "))
 Pennies = int(input("Enter the numner of pennies: "))
 
-total = (Quarters * .25) + (Dimes * .10) + (Nickels * .05) + (Pennies * .01)
+
+total = (Quarters * 0.25) + (Dimes * 0.10) + (Nickels * 0.05) + (Pennies * 0.01)
 
 # Round total
 total = round(total, 2)
