@@ -1,3 +1,4 @@
+print("Money Counter")
 print("Enter the number of quarters, dimes, nickels, and pennies.")
 
 Quarters = int(input("Enter the number of quarters: "))
