@@ -1,12 +1,12 @@
 print("Money Counter")
 
 quarters = int(input("Enter the number of quarters: "))
-Dimes = int(input("Enter the number of dimes: "))
-Nickels = int(input("Enter the number of nickels: "))
-Pennies = int(input("Enter the number of pennies: "))
+dimes = int(input("Enter the number of dimes: "))
+nickels = int(input("Enter the number of nickels: "))
+pennies = int(input("Enter the number of pennies: "))
 
 
-total = (quarters * 0.25) + (Dimes * 0.10) + (Nickels * 0.05) + (Pennies * 0.01)
+total = (quarters * 0.25) + (dimes * 0.10) + (nickels * 0.05) + (pennies * 0.01)
 
 # Round total
 total = round(total, 2)
