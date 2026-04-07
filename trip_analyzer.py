@@ -18,15 +18,15 @@ reversed_name = trip_name[::-1]
 
 #Trip Summary
 print("-- Trip Summary --")
-print("Trip Name: ", trip_name)
-print("Miles Per Gallon: ", mpg)
-print("Total Gas Cost: ", total)
-print("Cost Per Mile: ", cost_per_mile)
+print(f"Trip Name: {trip_name}")
+print(f"Miles Per Gallon: {mpg}")
+print(f"Total Gas Cost: {total}")
+print(f"Cost Per Mile: {cost_per_mile}")
 
-#Trip Name Analysis
+# Trip Name Analysis
 print("-- Trip Name --")
-print("Total letters: ", length)
-print("First letters: ", first_letter)
-print("Last Letters: ", last_letter)
-print("First three letters:", first_three)
-print("Reversed name:", reversed_name)
+print(f"Total letters: {length}")
+print(f"First letter: {first_letter}")
+print(f"Last Letter: {last_letter}")
+print(f"First three letters: {first_three}")
+print(f"Reversed name: {reversed_name}")
