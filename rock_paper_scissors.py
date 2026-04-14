@@ -1,38 +1,44 @@
 import random
 
-def get_computer_choice(test_mode=False):
-    if test_mode:
-        return "rock"
-    return random.choice(["rock", "paper", "scissors"])
+test_input = input("Enable test mode? (yes/no): ").lower()
+
+if test_input == "yes":
+    test_mode = True
+else:
+    test_mode = False
+
+user_choice = input("Enter rock, paper, or scissors: ").lower()
 
 
-def determine_winner(user, computer):
-    if user == computer:
-        return "It's a tie!"
-    
-    if (user == "rock" and computer == "scissors") or \
-       (user == "paper" and computer == "rock") or \
-       (user == "scissors" and computer == "paper"):
-        return "You win!"
-    
-    return "Computer wins!"
+if test_mode:
+    computer_choice = "rock"
+else:
+    computer_choice = random.choice(["rock", "paper", "scissors"])
 
 
-def play_game():
-    # Ask if test mode should be on
-    test_input = input("Enable test mode? (yes/no): ").lower()
-    test_mode = test_input == "yes"
+if user_choice == computer_choice:
+    result = "It's a tie!"
 
-    user_choice = input("Enter rock, paper, or scissors: ").lower()
-    
-    if user_choice not in ["rock", "paper", "scissors"]:
-        print("Invalid choice!")
-        return
+elif user_choice == "rock":
+    if computer_choice == "scissors":
+        result = "You win!"
+    else:
+        result = "Computer wins!"
 
-    computer_choice = get_computer_choice(test_mode)
+elif user_choice == "paper":
+    if computer_choice == "rock":
+        result = "You win!"
+    else:
+        result = "Computer wins!"
 
-    print(f"Computer chose: {computer_choice}")
-    print(determine_winner(user_choice, computer_choice))
+elif user_choice == "scissors":
+    if computer_choice == "paper":
+        result = "You win!"
+    else:
+        result = "Computer wins!"
 
+else:
+    result = "Invalid input!"
 
-play_game()
+print("Computer chose:", computer_choice)
+print(result)
