@@ -23,7 +23,7 @@ elif user_choice == "rock":
     if computer_choice == "scissors":
         result = "You win!"
     else:
-        result = "Computer wins!"
+        result = "You wins!"
 
 elif user_choice == "paper":
     if computer_choice == "rock":
@@ -35,7 +35,7 @@ elif user_choice == "scissors":
     if computer_choice == "paper":
         result = "You win!"
     else:
-        result = "Computer wins!"
+        result = "You lose!"
 
 else:
     result = "Invalid input!"
