@@ -13,8 +13,10 @@ else:
 attempts = 0
 MAX_ATTEMPTS = 10
 
+print("I am thinking of a number between 1 and 100.")
+
 while attempts < MAX_ATTEMPTS:
-    print("I am thinking of a number between 1 and 100.")
+    
     user_guess = int(input("Enter your guess: "))
     attempts += 1
 
