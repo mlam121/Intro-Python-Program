@@ -10,7 +10,7 @@ else:
     secret_number = random.randint(1, 100)
 
 attempts = 0
-MAX_ATTEMPTS = 11
+MAX_ATTEMPTS = 10
 
 while attempts < MAX_ATTEMPTS:
     user_guess = int(input("Enter your guess (1-100): "))
