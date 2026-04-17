@@ -21,7 +21,7 @@ while attempts < MAX_ATTEMPTS:
     attempts += 1
 
     if user_guess == secret_number:
-        print(f"Correct! You guessed guessed it in {attempts} attempts.")
+        print(f"Correct! You guessed it in {attempts} attempts.")
         break
     elif user_guess < secret_number:
         print("Too low!")  
