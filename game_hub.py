@@ -12,7 +12,7 @@ while running:
 
     game_choice = input("Enter your game choice (1, 2, or 3): ")
 
-    # Rock, Paper, Scissors
+# Rock, Paper, Scissors
     if game_choice == "1":
         test_input = input("Enable test mode? (yes/no): ").lower()
         test_mode = test_input == "yes"
@@ -38,7 +38,7 @@ while running:
         print("Computer chose:", computer_choice)
         print(result)
 
-    # Guessing Game
+# Guessing Game
     elif game_choice == "2":
         test_input = input("Enable test mode? (yes/no): ").lower()
 
@@ -73,12 +73,11 @@ while running:
     # Quit
     elif game_choice == "3":
         print("Goodbye!")
-        running = False  # stop the loop
+        running = False 
 
     else:
         print("Invalid choice. Try again.")
 
-    # Ask to continue only if still running
     if running:
         again = input("\nWould you like to play again? (yes/no): ").lower()
         if again != "yes":
