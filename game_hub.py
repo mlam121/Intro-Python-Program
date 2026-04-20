@@ -1,8 +1,10 @@
 import random
 
-running = input("Would you like to play? (yes/no): ").lower()
+# Start by asking the user
+start_input = input("Would you like to play? (yes/no): ").lower()
+running = True if start_input == "yes" else False
 
-while running == "yes":
+while running:
     print("\nGame Menu:")
     print("1. Play Rock, Paper, Scissors")
     print("2. Play Guessing Game")
@@ -31,7 +33,7 @@ while running == "yes":
         elif user_choice == "scissors":
             result = "You win!" if computer_choice == "paper" else "You lose!"
         else:
-            result = "Invalid input!"
+            result = "Invalid choice. Try again."
 
         print("Computer chose:", computer_choice)
         print(result)
@@ -71,9 +73,13 @@ while running == "yes":
     # Quit
     elif game_choice == "3":
         print("Goodbye!")
-        break
+        running = False  # stop the loop
 
     else:
-        print("Invalid menu choice.")
+        print("Invalid choice. Try again.")
 
-    running = input("\nWould you like to play again? (yes/no): ").lower()
+    # Ask to continue only if still running
+    if running:
+        again = input("\nWould you like to play again? (yes/no): ").lower()
+        if again != "yes":
+            running = False
