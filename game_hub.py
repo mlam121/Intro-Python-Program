@@ -77,8 +77,3 @@ while running:
 
     else:
         print("Invalid choice. Try again.")
-
-    if running:
-        again = input("\nWould you like to play again? (yes/no): ").lower()
-        if again != "yes":
-            running = False
