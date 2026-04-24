@@ -2,7 +2,7 @@ import random
 
 # Start by asking the user
 start_input = input("Would you like to play? (yes/no): ").lower()
-running = True if start_input == "yes" else False
+running = True
 
 while running:
     print("\nGame Menu:")
