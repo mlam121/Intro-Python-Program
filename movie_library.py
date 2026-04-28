@@ -35,7 +35,7 @@ def sort_movies():
    if not sorted_movies:
        print("No movies in the library.")
    else:
-       print("\nTitle                         Year    Genre           Rating")
+       print("\nTitle             Year    Genre           Rating")
        print("--------------------------------------")
        for title, details in sorted_movies.items():
            print(f"{title:<18} {details[0]:<6} {details[1]:<12} {details[2]}")
