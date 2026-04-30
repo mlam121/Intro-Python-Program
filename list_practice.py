@@ -7,7 +7,7 @@ print(colors)
 
 # Task 2
 colors.append("purple")
-
+print(colors)
 # Task 3
 for color in colors:
     print("Color:", color)
