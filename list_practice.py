@@ -14,9 +14,9 @@ for color in colors:
 
 # Task 4
 user_input = input("Enter a color: ")
-    if user_input in colors:
+if user_input in colors:
         print("Correct guess!")
-    else:
+else:
         print("Try again.")
 
 # Task 5
