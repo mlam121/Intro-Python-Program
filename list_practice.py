@@ -24,8 +24,7 @@ points = [[2, 3], [5, 6], [8, 9]]
 print(points)
 
 # Task 6
-print(points[0])
-print(points[1])
+print(points[:2])
 
 # Task 7
 for point in points:
