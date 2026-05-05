@@ -28,7 +28,7 @@ questions = [
     }
 ]
 
-print("Task 1 Output:")
+
 print("Question bank created with", len(questions), "questions.")
 print()
 
@@ -67,7 +67,6 @@ def ask_question(q):
 def run_quiz():
     score = 0
 
-    print("Task 3 Output:")
     print("Welcome to the Animal Quiz!\n")
 
     random.shuffle(questions)
@@ -79,6 +78,4 @@ def run_quiz():
     print("Final Score:", score, "/", len(questions))
     print()
 
-
-print("Task 4 Output:")
 run_quiz()
