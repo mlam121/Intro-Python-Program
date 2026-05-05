@@ -1,10 +1,5 @@
-# animal_quiz.py
-# Chapter Project - Animal Quiz Program
-
 import random
 
-
-# Task 1: Creating the Question Bank (List of Dictionaries)
 questions = [
     {
         "question": "What is the largest land animal?",
@@ -38,14 +33,13 @@ print("Question bank created with", len(questions), "questions.")
 print()
 
 
-# Task 2: Function to Ask One Question (with 3 attempts)
+#Ask question
 def ask_question(q):
     attempts = 0
 
     while attempts < 3:
         user_answer = input(q["question"] + " ")
 
-        # Handle number answers
         if q["type"] == "number":
             try:
                 user_answer = int(user_answer)
@@ -54,11 +48,9 @@ def ask_question(q):
                 attempts += 1
                 continue
 
-        # Handle string answers (case-insensitive)
         if q["type"] == "string":
             user_answer = user_answer.lower()
 
-        # Check answer
         if user_answer == q["answer"]:
             print("Correct!\n")
             return 1
@@ -71,7 +63,7 @@ def ask_question(q):
     return 0
 
 
-# Task 3: Function to Run the Quiz
+# run quiz
 def run_quiz():
     score = 0
 
@@ -88,6 +80,5 @@ def run_quiz():
     print()
 
 
-# Task 4: Running the Program
 print("Task 4 Output:")
 run_quiz()
